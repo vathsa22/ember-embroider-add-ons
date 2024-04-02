@@ -7,52 +7,70 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      legacyDecorators: true,
-    },
+      legacyDecorators: true
+    }
   },
-  plugins: ['ember'],
+  plugins: [
+    'ember',
+    'qunit',
+    'compat'
+  ],
   extends: [
     'eslint:recommended',
     'plugin:ember/recommended',
-    'plugin:prettier/recommended',
+    'plugin:compat/recommended'
   ],
   env: {
-    browser: true,
+    browser: true
   },
-  rules: {},
+  rules: {
+    'no-mixed-spaces-and-tabs': [1,'smart-tabs'],
+    'ember/no-jquery': 'error'
+  },
+  globals: {
+    "FroalaEditor": true,
+    "gapi": true,
+    "google": true,
+    "BoxSelect": true,
+    "Dropbox": true,
+    "toastr": true,
+  },
   overrides: [
     // node files
     {
       files: [
-        './.eslintrc.js',
-        './.prettierrc.js',
-        './.template-lintrc.js',
-        './ember-cli-build.js',
-        './testem.js',
-        './blueprints/*/index.js',
-        './config/**/*.js',
-        './lib/*/index.js',
-        './server/**/*.js',
+        '.eslintrc.js',
+        '.template-lintrc.js',
+        '.template-a11y-lintrc.js',
+        'ember-cli-build.js',
+        'testem.js',
+        'blueprints/*/index.js',
+        'config/**/*.js',
+        'lib/*/index.js',
+        'server/**/*.js',
+        'scripts/*.js'
       ],
       parserOptions: {
-        sourceType: 'script',
+        sourceType: 'script'
       },
       env: {
         browser: false,
-        node: true,
+        node: true
       },
       plugins: ['node'],
-      extends: ['plugin:node/recommended'],
-      rules: {
+      rules: Object.assign({}, require('eslint-plugin-node').configs.recommended.rules, {
+        // add your custom rules and overrides for node files here
         // this can be removed once the following is fixed
         // https://github.com/mysticatea/eslint-plugin-node/issues/77
         'node/no-unpublished-require': 'off',
-      },
+        'node/no-missing-require': 'off', // was failing when running eslint in github action.
+        'no-console': 'off'
+      })
     },
     {
       // Test files:
       files: ['tests/**/*-test.{js,ts}'],
-      extends: ['plugin:qunit/recommended'],
-    },
-  ],
+      rules: require('eslint-plugin-qunit').configs.recommended.rules
+    }
+  ]
 };
