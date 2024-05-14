@@ -165,7 +165,7 @@
     "svgo": "1.3.0",
     "testem-time-reporter": "2.0.0",
     "uuid": "3.4.0",
-    "ember-analytics-collector": "git+ssh://git@github.com/freshdesk/ember-analytics-collector.git#4.0.0-beta.0"
+    "ember-analytics-collector": "git+ssh://git@github.com/freshdesk/ember-analytics-collector.git#c775e363848a8db74087fd9bd353d05860b66746"
   },
   "engines": {
     "node": "12.* || 14.* || >= 16"
