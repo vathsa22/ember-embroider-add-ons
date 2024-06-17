@@ -113,7 +113,7 @@
     "ember-modifier": "2.1.1",
     "ember-moment": "9.0.0",
     "ember-page-title": "6.2.2",
-    "ember-power-select": "git@github.com:freshworks/fs-ember-power-select.git#f1748457a079b47d2804e322e6c0017dae3ed258",
+    "ember-power-select": "git@github.com:freshworks/fs-ember-power-select.git#fc1e156a9ef0a120266d327caafd55b5bb7efdd7",
     "ember-power-select-with-create": "0.8.0",
     "ember-qunit": "5.1.5",
     "ember-resolver": "8.0.3",
