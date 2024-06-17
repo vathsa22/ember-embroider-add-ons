@@ -126,7 +126,7 @@
     "ember-service-worker-cache-first": "git+ssh://git@github.com:freshworks/ember-service-worker-cache-first.git#51b1b3a81e93284f3aaaa5e7447f0ea474c14061",
     "ember-sinon": "5.0.0",
     "ember-sortable": "2.2.1",
-    "ember-source": "~3.28.8",
+    "ember-source": "3.28.12",
     "ember-sticky-element": "0.2.3",
     "ember-svg-jar": "2.2.3",
     "ember-template-compiler": "1.9.0-alpha",
