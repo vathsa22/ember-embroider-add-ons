@@ -90,7 +90,7 @@
     "ember-data-copyable": "1.3.0",
     "ember-data-model-fragments": "6.0.5",
     "ember-decorators": "6.0.0",
-    "ember-drag-sort": "git+ssh://git@github.com/freshworks/ember-drag-sort.git#92bba3ab0e68fbb0812848fd2e6aebfc1abe79c1",
+    "ember-drag-sort": "git+ssh://git@github.com/freshworks/ember-drag-sort.git#f2644ee572f0606c5581ccdc010a47e95ccd785a",
     "ember-drag-drop-sort": "git@github.com:freshworks/ember-drag-drop-sort.git#2e5c17da3d1f4fc48cdc47f7d31e1c03c9b6adb0",
     "ember-exam": "6.1.0",
     "ember-export-application-global": "2.0.1",
