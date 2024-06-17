@@ -166,6 +166,7 @@
     "testem-time-reporter": "2.0.0",
     "uuid": "3.4.0",
     "ember-analytics-collector": "git+ssh://git@github.com/freshdesk/ember-analytics-collector.git#c775e363848a8db74087fd9bd353d05860b66746",
+    "ember-table": "4.0.0",
     "ember-template-recast": "git+ssh://git@github.com/freshworks/ember-template-recast.git#9152c4cdc326e21f51f9ce585c58b343fa10f2c0"
   },
   "engines": {
