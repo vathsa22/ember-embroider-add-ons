@@ -48,7 +48,7 @@
     "d3-hierarchy": "2.0.0",
     "d3-selection": "2.0.0",
     "d3-shape": "2.0.0",
-    "d3-zoom": "2.0.0",
+    "d3-zoom": "3.0.0",
     "deepmerge": "4.0.0",
     "dhtmlx-scheduler": "git+ssh://git@github.com/freshdesk/fs-dhtmlx-scheduler.git#v6.0.0",
     "dompurify": "2.2.4",
